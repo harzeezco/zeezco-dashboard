@@ -5,11 +5,11 @@ import React from 'react';
 
 function Layout({ children }) {
   return (
-    <div className='flex text-white'>
-      <div className='flex-1 bg-bgSoft p-5'>
+    <div className='grid grid-cols-[240px_1fr] text-white'>
+      <div className=' bg-bgSoft p-5'>
         <Sidebar />
       </div>
-      <div className='flex-[4] p-5'>
+      <div className='p-5'>
         <Navbar />
         {children}
       </div>
